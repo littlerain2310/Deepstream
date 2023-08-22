@@ -1,0 +1,5 @@
+*.o
+models/
+backup/
+*.mp4
+*.mkv
