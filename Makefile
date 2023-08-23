@@ -33,7 +33,7 @@ ifeq ($(CUDA_VER),)
   $(error "CUDA_VER is not set")
 endif
 
-APP:= deepstream-test3-app
+APP:= test
 
 TARGET_DEVICE = $(shell gcc -dumpmachine | cut -f1 -d -)
 

@@ -9,7 +9,8 @@
 *****************************************************************************
 
 Get into Docker container:
-sudo docker run -it --rm --net=host --gpus all --runtime nvidia -v ${PWD}:/app deepstream
+docker build -t deepstream .
+sudo docker run -it --rm -p 8555:8554 --gpus all --runtime nvidia -v ${PWD}:/app deepstream
 bash install.sh
 make
 
